@@ -16,7 +16,7 @@ LiveData是由observer类表示的观察者视为处于活动状态，如果其�
 >LiveData遵循观察者模式。LiveData在生命周期状态更改时通知Observer对象，更新这些Observer对象中的UI。观察者可以在每次应用程序数据更改时更新UI，而不是每次发生更改时更新UI。
 
 - 没有内存泄漏  
->当观察者被绑定他们对应的LifeCycle以后，当页面销毁时他们会自动被溢出，不会导致内存溢出。
+>当观察者被绑定他们对应的LifeCycle以后，当页面销毁时他们会自动被移除，不会导致内存溢出。
 
 - 不会因为Activity的不可见导致Crash
 >当Activity不可见时，即使有数据变化，LiveData也不会通知观察者。因为此时观察者的LifeCyele并不处于Started或者RESUMED状态。
