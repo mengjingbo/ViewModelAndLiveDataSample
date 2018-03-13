@@ -22,7 +22,7 @@ LiveData是由observer类表示的观察者视为处于活动状态，如果其�
 >当Activity不可见时，即使有数据变化，LiveData也不会通知观察者。因为此时观察者的LifeCyele并不处于Started或者RESUMED状态。
 
 - 配置的改变
->当当前Activity配置改变（如屏幕方向），导致重新从onCreate走一遍，这是观察者们会立刻收到配置变化前的最新数据。
+>当前Activity配置改变（如屏幕方向），导致重新从onCreate走一遍，这时观察者们会立刻收到配置变化前的最新数据。
 
 - 共享资源
 >只需要一个LocationLivaData,连接系统服务一次，就能支持所有的观察者。
