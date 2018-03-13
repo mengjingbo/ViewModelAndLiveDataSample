@@ -1,4 +1,4 @@
-# ViewModelAndLiveDataSample
+# About ViewModel And LiveData
 ### 关于ViewModel
 
 ViewModel类的设计目的是以一种关注生命周期的方式存储和管理与UI相关的数据。  
